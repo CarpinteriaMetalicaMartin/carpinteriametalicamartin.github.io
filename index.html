@@ -8,14 +8,44 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			/* --- CAMBIO DE COLORES SIN TOCAR ESTRUCTURA --- */
+
+			/* Fondo de secciones oscuras (quitar lilas) */
+			.wrapper.style1, .wrapper.style3, #footer, #menu {
+				background-color: #1e242a !important; /* Gris Carbón */
+				background-image: none !important;
+			}
+
+			/* Sección de servicios (alterna) */
+			.wrapper.style2 {
+				background-color: #242c35 !important; /* Gris un poco más claro */
+				background-image: none !important;
+			}
+
+			/* Banner principal (tinte sobre la foto) */
+			#banner {
+				background-image: linear-gradient(rgba(30, 36, 42, 0.5), rgba(30, 36, 42, 0.8)), url('images/portada.jpg') !important;
+			}
+
+			/* Sección de contacto (CTA) */
+			.wrapper.style4 {
+				background-color: #1b2025 !important;
+				background-image: none !important;
+			}
+
+			/* Botón WhatsApp */
 			.button.whatsapp { 
 				background-color: #25D366 !important; 
 				color: #fff !important;
 				box-shadow: none !important;
 				font-weight: bold;
+				border: none !important;
 			}
-			.button.whatsapp:hover { 
-				background-color: #128C7E !important;
+			.button.whatsapp:hover { background-color: #128C7E !important; }
+
+			/* Títulos y acentos */
+			h2, h3, b, strong {
+				color: #ffffff !important;
 			}
 		</style>
 	</head>
@@ -62,7 +92,6 @@
 						<header class="major">
 							<h2>Maestros del Metal y la Confianza</h2>
 							<p>Somos una <strong>empresa familiar</strong> especializada en carpintería metálica y cerrajería. Nos encargamos de todos los cerramientos de su hogar: ventanas de alta eficiencia, puertas seccionales motorizadas, estructuras de hierro, trabajos en aluminio a medida y mucho más.</p>
-							<p>Combinamos <strong>técnicas tradicionales</strong> con los mejores materiales para garantizar acabados impecables y la máxima durabilidad.</p>
 						</header>
 					</div>
 				</section>
@@ -71,67 +100,45 @@
 						<section class="spotlight">
 							<div class="image"><img src="images/ventanas.jpg" alt="Ventanas" /></div><div class="content">
 								<h2>Ventanas de Alta Eficiencia</h2>
-								<p>Instalamos ventanas de PVC y Aluminio, cerramientos térmicos y <b>mosquiteras (enrollables y correderas)</b> para proteger su hogar con la mayor durabilidad.</p>
+								<p>Instalamos ventanas de PVC y Aluminio, cerramientos térmicos y <b>mosquiteras</b> para proteger su hogar.</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/cerrajeria.jpg" alt="Cerrajería" /></div><div class="content">
 								<h2>Hierro y Cerrajería a medida</h2>
-								<p>Expertos en todo tipo de carpintería metálica: rejas, puertas, estructuras de hierro y proyectos personalizados adaptados a sus necesidades.</p>
+								<p>Expertos en todo tipo de carpintería metálica: rejas, puertas y estructuras.</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/motores.jpg" alt="Motores" /></div><div class="content">
 								<h2>Puertas Seccionales y Motores</h2>
-								<p>Automatizamos sus accesos con motores de última generación y puertas seccionales robustas, combinando seguridad y comodidad.</p>
+								<p>Automatizamos sus accesos con seguridad y comodidad.</p>
 							</div>
 						</section>
-				</section>
-
-				<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>¿Qué necesita?</h2>
-								<p>Cubrimos todas las ramas del sector del metal. Pídanos presupuesto sin compromiso; estamos aquí para ayudarle.</p>
-							</header>
-							<ul class="features">
-								<li class="icon solid fa-door-open">
-									<h3>Puertas y Ventanas</h3>
-									<p>Aluminio y PVC con los mejores perfiles del mercado.</p>
-								</li>
-								<li class="icon solid fa-hammer">
-									<h3>Carpintería Metálica</h3>
-									<p>Hierro, estructuras y reparaciones metálicas profesionales.</p>
-								</li>
-								<li class="icon solid fa-bug">
-									<h3>Mosquiteras</h3>
-									<p>Sistemas enrollables, correderos y fijos hechos a medida.</p>
-								</li>
-								<li class="icon solid fa-cog">
-									<h3>Automatismos</h3>
-									<p>Instalación y mantenimiento de puertas motorizadas.</p>
-								</li>
-							</ul>
-						</div>
 				</section>
 
 				<section id="contact" class="wrapper style4">
 					<div class="inner" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
 						<header style="margin-bottom: 2em; padding-right: 0; width: 100%;">
-							<h2 style="margin-bottom: 0.5em;">Contactanos</h2>
-							<p>Ubicados en Ruescas (Almería).<br />
-							Horario: Lunes a Viernes <b>08:00 to 16:00</b>.</p>
+							<h2 style="margin-bottom: 0.5em;">Contacte con nosotros</h2>
+							<p style="line-height: 1.8;">
+								Ubicados en Ruescas (Almería).<br />
+								Horario de atención:<br />
+								Lunes a Viernes de <b>07:00 a 17:00</b>.
+							</p>
 						</header>
 						<ul class="actions stacked" style="margin: 0 auto; width: 100%; max-width: 300px;">
-							<li><a href="tel:606126892" class="button fit" style="background-color: #316395 !important; color: #ffffff !important; border: none !important; box-shadow: none !important; font-weight: bold;">Llamar ahora</a></li>
-							<li><a href="https://wa.me/34606126892?text=Hola,%20he%20visto%20vuestra%20pagina%20web%20y%20me%20gustaria%20tener%20mas%20información" class="button fit whatsapp">WhatsApp</a></li>
+							<li style="margin-bottom: 15px !important;">
+								<a href="tel:606126892" class="button fit" style="background-color: #316395 !important; color: #ffffff !important; border: none !important; box-shadow: none !important; font-weight: bold;">Llamar ahora</a>
+							</li>
+							<li><a href="https://wa.me/34606126892?text=Hola..." class="button fit whatsapp">WhatsApp</a></li>
 						</ul>
 					</div>
 				</section>
 
 				<footer id="footer">
 					<ul class="copyright">
-						<li>&copy; Antonio Martín e Hijo | Carpintería Metálica</li><li>Ubicación: Ruescas, Almería</li>
+						<li>&copy; Antonio Martín e Hijo</li><li>Ubicación: Ruescas, Almería</li>
 					</ul>
 				</footer>
 		</div>
