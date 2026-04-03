@@ -1,21 +1,51 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		<title>Metalwork Antonio Martín e Hijo</title>
+		<title>Antonio Martín e Hijo | Metalwork</title>
 		<link rel="icon" type="image/png" href="../images/favicon.png" sizes="32x32">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 		<style>
+			/* --- MAINTAINED PROFESSIONAL STYLE --- */
+
+			/* Background for dark sections (removing purples) */
+			.wrapper.style1, .wrapper.style3, #footer, #menu {
+				background-color: #1e242a !important; /* Charcoal Gray */
+				background-image: none !important;
+			}
+
+			/* Services section (alternate) */
+			.wrapper.style2 {
+				background-color: #242c35 !important; /* Slightly lighter gray */
+				background-image: none !important;
+			}
+
+			/* Main banner (tint over photo) */
+			#banner {
+				background-image: linear-gradient(rgba(30, 36, 42, 0.5), rgba(30, 36, 42, 0.8)), url('../images/portada.jpg') !important;
+			}
+
+			/* Contact section (CTA) */
+			.wrapper.style4 {
+				background-color: #1b2025 !important;
+				background-image: none !important;
+			}
+
+			/* WhatsApp Button */
 			.button.whatsapp { 
 				background-color: #25D366 !important; 
 				color: #fff !important;
 				box-shadow: none !important;
 				font-weight: bold;
+				border: none !important;
 			}
-			.button.whatsapp:hover { 
-				background-color: #128C7E !important;
+			.button.whatsapp:hover { background-color: #128C7E !important; }
+
+			/* Titles and accents */
+			h2, h3, b, strong {
+				color: #ffffff !important;
 			}
 		</style>
 	</head>
@@ -62,7 +92,6 @@
 						<header class="major">
 							<h2>Masters of Metal and Trust</h2>
 							<p>We are a <strong>family business</strong> specialized in metalwork and locksmithing. We take care of all your home enclosures: high-efficiency windows, motorized sectional doors, iron structures, custom aluminum work, and much more.</p>
-							<p>We combine <strong>traditional techniques</strong> with the best materials to guarantee impeccable finishes and maximum durability.</p>
 						</header>
 					</div>
 				</section>
@@ -75,7 +104,7 @@
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="../images/cerrajeria.jpg" alt="Locksmith" /></div><div class="content">
+							<div class="image"><img src="../images/cerrajeria.jpg" alt="Metalwork" /></div><div class="content">
 								<h2>Custom Metalwork & Iron</h2>
 								<p>Experts in all types of metal carpentry: grilles, gates, iron structures, and personalized projects tailored to your needs.</p>
 							</div>
@@ -119,11 +148,12 @@
 					<div class="inner" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
 						<header style="margin-bottom: 2em; padding-right: 0; width: 100%;">
 							<h2 style="margin-bottom: 0.5em;">Contact Us</h2>
-							<p>Located in Ruescas (Almería).<br />
-							Opening hours: Monday to Friday <b>07:00 to 17:00</b>.</p>
+							<p style="line-height: 1.8;">
+								Located in Ruescas (Almería).<br />
+								Opening hours: Monday to Friday <b>08:00 to 16:00</b>.
+							</p>
 						</header>
 						<ul class="actions stacked" style="margin: 0 auto; width: 100%; max-width: 300px;">
-							<li><a href="tel:606126892" class="button fit" style="background-color: #316395 !important; color: #ffffff !important; border: none !important; box-shadow: none !important; font-weight: bold;">Call Now</a></li>
 							<li><a href="https://wa.me/34606126892?text=Hola,%20he%20visto%20vuestra%20pagina%20web%20y%20me%20gustaria%20tener%20mas%20información" class="button fit whatsapp">WhatsApp</a></li>
 						</ul>
 					</div>
@@ -131,10 +161,9 @@
 
 				<footer id="footer">
 					<ul class="copyright">
-						<li>&copy; Metalwork Antonio Martín e Hijo</li><li>Location: Ruescas, Almería</li>
+						<li>&copy; Antonio Martín e Hijo | Metalwork</li><li>Location: Ruescas, Almería</li>
 					</ul>
 				</footer>
-
 		</div>
 
 		<script src="../assets/js/jquery.min.js"></script>
@@ -144,6 +173,5 @@
 		<script src="../assets/js/breakpoints.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
-
 	</body>
 </html>
