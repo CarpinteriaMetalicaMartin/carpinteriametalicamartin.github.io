@@ -10,10 +10,15 @@
 		<style>
 			/* --- MAINTAINED PROFESSIONAL STYLE --- */
 
-			/* Background for dark sections (removing purples) */
 			.wrapper.style1, .wrapper.style3, #footer, #menu {
-				background-color: #1e242a !important; /* Charcoal Gray */
-				background-image: none !important;
+			    background-color: #1e242a !important; /* Gris Carbón */
+			    background-image: none !important;
+			    color: #ffffff !important; /* <--- ESTA LÍNEA arregla el color del texto */
+			}
+			
+			/* Y añade esta regla justo debajo para asegurar los párrafos */
+			.wrapper.style1 p, .wrapper.style3 p {
+			    color: #ffffff !important;
 			}
 
 			/* Services section (alternate) */
