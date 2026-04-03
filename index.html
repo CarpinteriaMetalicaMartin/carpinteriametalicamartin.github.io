@@ -7,6 +7,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Estilo personalizado para el botón de WhatsApp */
+			.button.whatsapp {
+				background-color: #25D366 !important;
+				color: #ffffff !important;
+				box-shadow: none !important;
+				font-weight: bold;
+			}
+			.button.whatsapp:hover {
+				background-color: #128C7E !important;
+			}
+		</style>
 	</head>
 	<body class="landing is-preload">
 
@@ -15,23 +27,22 @@
 				<header id="header" class="alt">
 						<h1><a href="index.html">Antonio Martín e Hijo</a></h1>
 						<nav id="nav">
-						    <ul>
-						        <li style="vertical-align: middle;">
-						            <div id="google_translate_element"></div>
-						        </li>
-						        
-						        <li class="special">
-						            <a href="#menu" class="menuToggle"><span>Menú</span></a>
-						            <div id="menu">
-						                <ul>
-						                    <li><a href="index.html">Inicio</a></li>
-						                    <li><a href="#one">Quiénes Somos</a></li>
-						                    <li><a href="#two">Servicios</a></li>
-						                    <li><a href="#cta">Contacto</a></li>
-						                </ul>
-						            </div>
-						        </li>
-						    </ul>
+							<ul>
+								<li style="vertical-align: middle;">
+									<div id="google_translate_element"></div>
+								</li>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menú</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Inicio</a></li>
+											<li><a href="#one">Quiénes Somos</a></li>
+											<li><a href="#two">Servicios</a></li>
+											<li><a href="#cta">Contacto</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
 						</nav>
 				</header>
 
@@ -40,35 +51,25 @@
 							<h2>Antonio Martín e Hijo</h2>
 							<p>Carpintería Metálica, Aluminio y PVC<br />
 							Especialistas en cerramientos.</p>
-							<ul class="actions special">
-								<li><a href="https://wa.me/34606126892?text=Hola,%20he%20visto%20vuestra%20web%20y%20querría%20pedir%20más%información" class="button primary">Pedir Presupuesto</a></li>
-							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Saber más</a>
 					</section>
 
 				<section id="one" class="wrapper style1 special">
-				    <div class="inner">
-				        <header class="major">
-				            <h2>Maestros del Metal y la Confianza</h2>
-				            <p>
-				                Somos una <strong>empresa familiar</strong> especialista en carpintería metálica y cerrajería. 
-				                Nos encargamos de todo el cerramiento de su vivienda: ventanas de alta eficiencia, puertas seccionales motorizadas, 
-				                estructuras de hierro, trabajos de aluminio a medida y mucho más. 
-				            </p>
-				            <p>
-				                Combinamos la <strong>técnica artesanal</strong> con los mejores materiales para garantizar 
-				                acabados impecables y la máxima durabilidad.
-				            </p>
-				        </header>
-				        <ul class="actions special">
-				            <li>
-				                <a href="https://wa.me/34606126892?text=Hola,%20necesito%20ayuda%20con%20un%20cerramiento" class="button">
-				                    Escríbenos por WhatsApp
-				                </a>
-				            </li>
-				        </ul>
-				    </div>
+					<div class="inner">
+						<header class="major">
+							<h2>Maestros del Metal y la Confianza</h2>
+							<p>
+								Somos una <strong>empresa familiar</strong> especialista en carpintería metálica y cerrajería. 
+								Nos encargamos de todo el cerramiento de su vivienda: ventanas de alta eficiencia, puertas seccionales motorizadas, 
+								estructuras de hierro, trabajos de aluminio a medida y mucho más. 
+							</p>
+							<p>
+								Combinamos la <strong>técnica artesanal</strong> con los mejores materiales para garantizar 
+								acabados impecables y la máxima durabilidad.
+							</p>
+						</header>
+					</div>
 				</section>
 
 				<section id="two" class="wrapper alt style2">
@@ -131,7 +132,7 @@
 							</header>
 							<ul class="actions stacked">
 								<li><a href="tel:606126892" class="button fit primary">Llamar ahora</a></li>
-								<li><a href="https://wa.me/34606126892" class="button fit">WhatsApp</a></li>
+								<li><a href="https://wa.me/34606126892?text=Hola,%20he%20visto%20vuestra%20web%20y%20querría%20pedir%20más%20información" class="button fit whatsapp">Escríbenos por WhatsApp</a></li>
 							</ul>
 						</div>
 					</section>
@@ -144,7 +145,7 @@
 
 			</div>
 
-		<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
@@ -152,11 +153,11 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-		<script type="text/javascript">
-		function googleTranslateElementInit() {
-		  new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es'}, 'google_translate_element');
-		}
-		</script>
-		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+			<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es'}, 'google_translate_element');
+			}
+			</script>
+			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</body>
 </html>
