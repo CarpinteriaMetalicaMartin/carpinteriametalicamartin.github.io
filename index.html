@@ -5,39 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carpintería Metálica - Antonio Martín e Hijo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <style>
+        :root {
+            --nc-lk-1: #25d366; /* Color WhatsApp */
+            --nc-tx-1: #333;
+        }
+        body { max-width: 800px; margin: auto; padding: 20px; background-color: #f9f9f9; }
+        header { text-align: center; padding: 40px 0; background: #fff; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        h1 { color: #1a1a1a; margin-bottom: 10px; }
+        
+        /* Galería de imágenes sencilla */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .galeria img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Recorta las fotos para que todas midan lo mismo */
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .galeria img:hover { transform: scale(1.03); }
+
+        /* Sección de contacto destacada */
+        .contacto-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border: 2px solid #eee;
+        }
+        .btn-whatsapp {
+            background: #25D366;
+            color: white !important;
+            padding: 18px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+        
+        /* Botón flotante para móvil */
+        .float-ws {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Carpintería Metálica Antonio Martin e Hijo</h1>
-        <p><i>Maestros del metal, el aluminio y el PVC con trato familiar.</i></p>
+        <h1>Antonio Martín e Hijo</h1>
+        <p><strong>Carpintería Metálica • Almería</strong></p>
+        <p style="color: #666;"><i>Maestros del metal, aluminio y PVC. Tradición y confianza en cada trabajo.</i></p>
     </header>
 
     <main>
-        <p>Somos una empresa familiar especialista en carpintería metálica y cerrajería. Nos encargamos de todo el cerramiento de su vivienda: ventanas de alta eficiencia, puertas seccionales motorizadas, estructuras de hierro, trabajos de aluminio a medida y mucho más. Combinamos la técnica artesanal con los mejores materiales para garantizar acabados impecables y la máxima durabilidad.</p>
-        
-        <h2>¿Qué hacemos?</h2>
-        <ul>
-            <li>Ventanas y puertas (Aluminio y PVC)</li>
-            <li>Cerrajería y estructuras de hierro</li>
-            <li>Puertas motorizadas y automatismos</li>
-        </ul>
+        <section>
+            <h2>Sobre nosotros</h2>
+            <p>Somos una empresa familiar especialista en cerramientos. Trabajamos el <b>hierro, aluminio y PVC</b> con la precisión artesanal de siempre, adaptándonos a las nuevas tecnologías y materiales de alta eficiencia.</p>
+        </section>
 
-        <h2>Nuestros trabajos</h2>
-        <p>(Aquí puedes subir fotos de trabajos reales)</p>
-        <hr>
+        <section>
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li><b>Ventanas Acústicas:</b> Aislamiento térmico y sonoro de alta eficiencia.</li>
+                <li><b>Cerrajería:</b> Puertas, rejas y estructuras de hierro a medida.</li>
+                <li><b>Automatismos:</b> Puertas seccionales y motores de última generación.</li>
+                <li><b>Aluminio:</b> Cerramientos de terrazas, balcones y mucho más.</li>
+            </ul>
+        </section>
 
-        <section style="text-align: center; background: #f4f4f4; padding: 20px; border-radius: 10px;">
-            <h3>¿Hablamos?</h3>
-            <p>Cuéntanos qué necesitas y te ayudamos encantados.</p>
-            <a href="https://wa.me/34XXXXXXXXX" style="background: #25D366; color: white; padding: 15px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">
-                Escribir por WhatsApp
+        <section>
+            <h2>Trabajos Recientes</h2>
+            <div class="galeria">
+                <img src="https://via.placeholder.com/400x300?text=Ventana+PVC" alt="Trabajo 1">
+                <img src="https://via.placeholder.com/400x300?text=Puerta+Hierro" alt="Trabajo 2">
+                <img src="https://via.placeholder.com/400x300?text=Cerrajería" alt="Trabajo 3">
+            </div>
+        </section>
+
+        <br>
+
+        <section class="contacto-card">
+            <h3>¿Necesitas un presupuesto?</h3>
+            <p>Escríbenos ahora por WhatsApp o llámanos directamente. Te atenderemos sin compromiso.</p>
+            
+            <a href="https://wa.me/34XXXXXXXXX" class="btn-whatsapp">
+                📱 Contactar por WhatsApp
             </a>
-            <p style="margin-top: 15px;">O llámanos al: <b>600 000 000</b></p>
+            
+            <p style="margin-top: 20px;">O llámanos al: <br><a href="tel:600000000" style="font-size: 1.4rem; font-weight: bold; color: #1a1a1a;">600 000 000</a></p>
+            <p><small>📍 Ruescas, Almería</small></p>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Carpintería Metálica Antonio Martín e Hijo - Ruescas</p>
+    <footer style="text-align: center; padding: 40px 0; color: #999; font-size: 0.8rem;">
+        <p>© 2026 Carpintería Metálica Antonio Martín e Hijo</p>
     </footer>
+
+    <a href="https://wa.me/34XXXXXXXXX" class="float-ws">
+        <span style="color:white; font-size: 30px;">💬</span>
+    </a>
+
 </body>
 </html>
