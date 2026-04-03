@@ -28,9 +28,10 @@
 				background-image: none !important;
 			}
 
-			/* Banner principal (tinte sobre la foto) */
 			#banner {
-				background-image: linear-gradient(rgba(30, 36, 42, 0.5), rgba(30, 36, 42, 0.8)), url('images/favicon.png') !important;
+		    /* Quitamos la url del favicon de aquí para que no se vea gigante de fondo */
+			    background-image: linear-gradient(rgba(30, 36, 42, 0.5), rgba(30, 36, 42, 0.8)) !important;
+			    background-color: #1e242a; /* Color sólido de respaldo */
 			}
 
 			/* Sección de contacto (CTA) */
@@ -110,13 +111,25 @@
 						</nav>
 				</header>
 
-				<section id="banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/favicon.png'); background-size: cover;">
-						<div class="inner">
-							<h2>Antonio Martín e Hijo</h2>
-							<p>Carpintería Metálica, Aluminio y PVC<br />
-							Especialistas en cerramientos.</p>
-						</div>
-						<a href="#aboutus" class="more scrolly">Saber más</a>
+				<section id="banner">
+				    <div class="inner">
+				        <div class="logo-container" style="margin-bottom: 2em;">
+				            <img src="images/favicon.png" alt="Logo Antonio Martín e Hijo" style="width: 120px; height: auto; opacity: 0.9;">
+				        </div>
+				        
+				        <h2 style="border-top: 2px solid white; border-bottom: 2px solid white; display: inline-block; padding: 0.5em 1em; letter-spacing: 4px;">
+				            ANTONIO MARTÍN E HIJO
+				        </h2>
+				        
+				        <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.9em; margin-top: 1.5em;">
+				            Carpintería Metálica, Aluminio y PVC<br />
+				            Especialistas en cerramientos.
+				        </p>
+				        
+				        <ul class="actions special">
+				            <li><a href="#aboutus" class="more scrolly" style="border: none; text-decoration: underline;">SABER MÁS</a></li>
+				        </ul>
+				    </div>
 				</section>
 
 				<section id="aboutus" class="wrapper style1 special">
